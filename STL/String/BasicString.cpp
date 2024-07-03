@@ -11,21 +11,22 @@ int main(){
     // cout<<s<<endl;
 
     // string name;
+    //cin.ignore();
     // getline(cin,name);
     // cout<<name; 
 
-    /* int t;
+    int t;
     cin>>t;
+    cin.ignore();// Ignores the newline character left in the input buffer after reading t. This is necessary because we will be using getline to read strings, which might be affected by leftover newline characters.
     for (int i = 0; i <t; i++)
     {
         string s;
-        char c;
-        cin>>c;
-        getline(cin, s);
-        s=c+s;
+        getline(cin, s);;
         cout<<s<<endl;
        
-    } */
+    }
+
+    /*
 //Remove specific value
     string st="ABSCA";
     st.erase(remove(st.begin(),st.end(),'A'), st.end());
@@ -69,7 +70,7 @@ int main(){
 
 
     
-    
+    */
     
 
 
