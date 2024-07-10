@@ -42,6 +42,13 @@ int main(){
     int as=stoi(t);
     cout<<as<<endl;
 
+    // Append the character m[c] / k times to the answer string
+        string  ans += string(m[c] / k, c);
+
+        
+        string all = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        x = all.substr(0, N);
+
 
 // check upper or lower
 

@@ -9,7 +9,7 @@ int main() {
 	vector <int > v(n);
 	for(int i=0; i<n;i++) cin>>v[i];
 	sort(v.begin(),v.end());
-	int sz=unique(v.begin(), v.end()) - v.begin();
+	int sz=unique(v.begin(), v.end()) - v.begin();//before unique the vector we have to need sort the vector
 
 	if(sz==x) cout<<"Good";
 	else if(sz>x) cout<<"Average";
